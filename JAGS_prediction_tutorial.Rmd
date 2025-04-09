@@ -11,7 +11,7 @@ Please reach out to me at marco.salvo@umconnect.umt.edu with any issues, bugs, o
 
 ## The JAGS Prediction Function
 
-Below is a guide and tutorial for using my homemade JAGS prediction function,
+Below is a guide and tutorial for using my JAGS prediction function,
 which allows the automated prediction of simulation results from JAGS models.
 
 This function was built to be used with output from the jagsUI package, so I'm
