@@ -1,13 +1,17 @@
-JAGS Prediction Function Tutorial
+JAGS Prediction Function
 ================
 Marco Salvo
 2025-04-09
 
+Please reach out to me at <marco.salvo@umconnect.umt.edu> with any
+issues, bugs, or update ideas. There is still a lot that can be done
+here and I am open to ideas!
+
 ## The JAGS Prediction Function
 
-Below is a guide and tutorial for using my homemade JAGS prediction
-function, which allows the automated prediction of simulation results
-from JAGS models.
+Below is a guide and tutorial for using my JAGS prediction function,
+which allows the automated prediction of simulation results from JAGS
+models.
 
 This function was built to be used with output from the jagsUI package,
 so I’m unsure how it would work with Rjags or other packages, but as
@@ -134,7 +138,7 @@ jags.predict <- function(intercepts,
 }
 ```
 
-### Arguements
+### Arguments
 
 There’s obviously a lot that goes into the function so let’s just
 understand the steps that go into it. First let’s start with an overview
