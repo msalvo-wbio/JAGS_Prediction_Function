@@ -691,6 +691,13 @@ m.covs <- list("category",
 m.category.names <- c("Forest", "Crop", "Developed", "Grassland", "Water", "Wetland")
 ```
 
+One note on this, If you wanted to predict across a raster of data (say
+for predictions on a map), you would instead provide a vector to every
+expected value, including categorical covariates (just it would be a
+vector of 0’s and 1’s) to allow for predictions across the raster. Using
+“category” is just a placeholder for if you want predictions for only
+that categorical covariate.
+
 You would then put everything into the functions below just like before
 and get a plot as output:
 
