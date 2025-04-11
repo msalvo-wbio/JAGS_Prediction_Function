@@ -1,7 +1,13 @@
 JAGS Prediction Function
 ================
 Marco Salvo
-2025-04-09
+2025-04-11
+
+To load the functions into R, run the following code line:
+
+``` r
+source("https://raw.githubusercontent.com/msalvo-wbio/JAGS_Prediction_Function/refs/heads/main/JAGS_prediction_functions.R")
+```
 
 Please reach out to me at <marco.salvo@umconnect.umt.edu> with any
 issues, bugs, or update ideas. There is still a lot that can be done
@@ -575,7 +581,7 @@ plot.jags.predictions(plotting.data = wolfdeer.predict$plotting.data,
                       y.lab = "Expected deer density")
 ```
 
-![](JAGS_prediction_tutorial_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](JAGS_prediction_tutorial_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 The plot shows our simulated density in blue as the background, with a
 white solid line for the median and dashed lines for our upper and lower
 95% credible intervals. Even if you dont want this exact plot, take a
@@ -621,7 +627,7 @@ lines(deerveg.predict$expected.quantiles[,1] ~ wolfdeer.predict$expected.cov.val
 lines(deerveg.predict$expected.quantiles[,3] ~ wolfdeer.predict$expected.cov.values[[1]], lty = 2, lwd = 3, col = 'white')
 ```
 
-![](JAGS_prediction_tutorial_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](JAGS_prediction_tutorial_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 Awesome, we can now see how vegetation density is predicted to change as
 wolf density increases.
